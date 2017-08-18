@@ -1,0 +1,22 @@
+{
+  "name": "babble",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^4.1.1",
+    "chai-http": "^3.0.0",
+    "mocha": "^3.5.0",
+    "sinon": "^3.2.0"
+  },
+  "scripts": {
+    "test": "mocha test/server/test.js && http-server -p 8081 ",
+    "start": "concurrently \"node server/main.js\" \"http-server -p 8080 ./client\""
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

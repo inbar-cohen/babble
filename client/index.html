@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vegans - Babble</title>
+</head>
+
+<body>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div id="modal-content" class="modal-content">
+            <h1>Who are you?</h1>
+            <div class="modal_div">
+                <label for="userName" class="modal_lable">Full name:</label>
+                <input id="userName" class="modal_input"><br/>
+            </div>
+            <div class="modal_div">
+                <label for="email" class="modal_lable">Email:</label>
+                <input id="email" class="modal_input"><br/>
+            </div>
+            <div class="modal_last_div">
+                <button type="submit" id="btnAnonymous">Stay Anonymous</button>
+                <button type="submit" id="btnlogin" class="save_btn">Save</button>
+            </div>
+        </div>
+
+    </div>
+
+    <header class="logo">
+        <img src="images/babble-logo.png" alt="">
+    </header>
+    <nav> </nav>
+    <main>
+
+        <h1 class="title">Vegans</h1>
+        <dl class="genderIcons">
+            <dt><span class="visual">Messages</span></dt>
+            <dd>
+                <img src="images/msgcount-icon.png" alt="">
+                <div id="msgCount" class="msgCount"></div>
+            </dd>
+            <!--
+           -->
+            <dt>
+                <span class="visual">Users</span>
+            </dt>
+            <dd>
+                <img src="images/usercount-icon.png" alt="">
+                <div id="userCount" class="userCount"></div>
+            </dd>
+        </dl>
+
+
+        <ol class="messagesList" id="myList">
+        </ol>
+
+        <!-- Simple form which will send a POST request -->
+        <form class="pos" id="submitForm">
+            <div class="Growable js-growable">
+                <pre><span></span><br></pre>
+                <div></div>
+                <textarea class="input" title="submit" id="input" aria-label="submit messages" name="input"></textarea>
+            </div>
+            <div id="submitBtn" class="submit-container">
+                <img class="submit-frame" src="images/submit-button-frame.png" alt="">
+                <button value="Submit" aria-label="submit" type="submit" title="submit" class="submit"></button>
+            </div>
+        </form>
+
+    </main>
+
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <script src="scripts/main.js"></script>
+
+
+</body>
+
+</html>
