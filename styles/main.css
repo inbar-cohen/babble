@@ -1,0 +1,598 @@
+
+
+body {
+  font-family: 'Nunito' , arial, sans-serif;
+  font-size: 15px;
+  overflow: hidden;
+}
+button {
+  font-family: 'Nunito' , arial, sans-serif;
+  
+}
+
+.visual{
+	display:none;
+	visibility: hidden;
+}
+
+/*html {
+    position: relative;
+}*/
+
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal_div {
+    padding-bottom: 5%;
+    display: flex;
+}
+
+.modal_last_div {
+    position: absolute;
+    bottom: 5%;
+    right: 6%;
+}
+.modal_lable {
+    width: 19%;
+    display: block;
+}
+
+.modal_input {
+    display: block;
+    float: right;
+    width: 80%;
+    border-radius: 7px;
+    border-color: rgba(136, 136, 136, 0.56);
+}
+
+.save_btn{
+    background-color: #74CF54;
+}
+.modal-content {
+    background-color: #fefefe;
+    height: 70%;
+    width: 69%;
+    position: absolute;
+    top: 4%;
+    right: 10%;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+}
+
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+.logo {
+    background-color: #292929;
+    position: fixed;
+    right: 0;
+    width: 100%;
+    height: 13%;
+        top: 0;
+}
+
+.logo img {
+    border: 0;
+    position: fixed;
+    top: 1%;
+    left: 1%;
+}
+
+.title {
+    color: black;
+    position: relative;
+    left: 4%;
+    width: 96%;
+    font-size: 20px;
+    font-family: Nunito; 
+}
+
+
+header{
+    margin-left: 3%;
+}
+
+.msgCount{
+    display: inline-block;
+}
+
+.userCount{
+    display: inline-block;
+}
+
+.messagesList li{
+    border: 1px solid #b3b7b7;
+    max-width: 600px;
+    font-size: 13px;
+    width: fit-content;
+        min-height: 38px;
+}
+
+p {
+      display: inline;
+      margin: 0;
+      word-break: break-word
+}
+.messagesList li:hover {
+     background-color: #D8DADA;
+}
+
+.messagesList li:hover .deleteIcon{
+    display: block;
+}
+li {
+    color: #000;
+    background-color: white;
+    border-radius: 15px;
+    margin-right: 10%;
+    margin-left: 53px;
+    margin-bottom: 1%;
+    padding: 1% 1% 1% 1%;
+    list-style-type: none;
+    display: block;
+}
+
+main {
+    background-color: #F6F6F6;
+    height: 87%;
+    width: 100%;
+    position: absolute;
+    top: 13%;
+    right: 0;
+    scroll-behavior: auto;
+    /*margin-bottom: 30%;*/
+}
+
+.avatar {
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    position: relative;
+    float: left; 
+    margin-right: 1%;
+}
+.submit {
+    position: relative;
+    margin-right: -14%;
+    margin-top: -24%;
+    height: 41px;
+    width: 47px;
+    outline: none;
+    border: 0;
+    background: url(../images/submit-button.png) no-repeat;
+    float: right;
+}
+.submit-frame {
+    /* position: absolute; */
+    /* margin-top: 6%; */
+    margin-left: 92%;
+    /* height: 53%; */
+    top: 104%;
+    margin-bottom: 5%;
+}
+
+.submit:hover {
+    cursor:pointer;
+}
+
+
+
+form button{
+    padding: 0;
+    outline: none;
+}
+
+.input {
+ background-color: #F6F6F6;
+}
+/*
+.input {
+    position: relative;
+    height: 62%;
+    width: 95%;
+    resize: none;
+    border: 0;
+    padding: 1%;
+    margin:1%;
+    font-size: 11px;
+    box-sizing: border-box;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+	padding: 0.5em;
+}
+
+
+.input:focus {
+  outline: none;
+  
+}*/
+
+.deleteIcon {
+    float: right;
+    border: 0px;
+    background: url(../images/delete-icon.png) no-repeat;
+    display: none;
+    outline: none;
+    height: 15px;
+}
+
+ol time {
+    color: #a0a5a5;
+    font-size: 9px;
+    padding-left: 1%; 
+    clear: right;
+    padding-left: 5px;
+}
+
+ol {
+    width: 92%;
+    height: 57%;
+    overflow-y: scroll;
+    min-height: 15%;
+    position: absolute;
+       
+            right: 10px;
+               margin: 0;
+                   overflow-x: hidden;
+}
+
+
+
+p {
+    display: block;
+}
+
+li cite {
+    font-style: normal;
+    font-weight: bold;
+}
+
+.genderIcons dd {
+    display: inline;
+    /*margin-left: -54px;
+    margin-right: 59px;*/
+    font-weight: bold;
+    /*font-size: 12px;*/
+        margin-left: 5px;
+    margin-right: 7px;
+
+}
+.genderIcons dd img {
+height: 11px;
+}
+
+.genderIcons {
+    position: fixed;
+    top: 16%;
+    right: 4%;
+    display: flex;
+
+}
+
+::-webkit-scrollbar {  
+      width: 10px;
+} /* this targets the default scrollbar (compulsory) */
+
+::-webkit-scrollbar-track {
+      background-color: white;
+      border-radius: 30px;
+} /* the new scrollbar will have a flat appearance with the set background color */
+ 
+::-webkit-scrollbar-thumb {
+      background-color: #EBEDEC; 
+      border: 1px solid #DADBDA;
+      border-radius: 30px;
+} /* this will style the thumb, ignoring the track */
+ 
+ 
+::-webkit-scrollbar-corner {
+      background-color: black;
+} /* if both the vertical and the horizontal bars appear, then perhaps the right bottom corner also needs to be styled */
+
+.pos {
+    position: fixed;
+    bottom: 0;
+    width: 82%;
+}
+.Growable {
+    position: absolute;
+    bottom: 13%;
+    width: 87%;
+    border: 1px solid;
+    max-height: 300px;
+    overflow: hidden;
+    -webkit-scrollbar: red;
+    min-height: 106px;
+    border-radius: 32px;
+    left: 2%;
+}
+
+.Growable textarea,
+.Growable pre {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: inherit;
+    font-size: inherit;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    padding: 0.5em;
+    width: 84%;
+}
+
+.Growable textarea {
+	/*width: 100%;*/
+    resize: none;
+    border: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    overflow: visible;
+}
+
+
+
+
+.submitform {
+width: 100%;
+    height: 17%;
+    bottom: 0;
+    position: absolute;
+    border: 1px solid #b3b7b7;
+}
+/*
+form div {
+        position: absolute;
+        right: 11%;
+}
+
+.Growable {
+    position: fixed;
+    max-height: 300px;
+    overflow: hidden;
+    -webkit-scrollbar: red;
+    width: 56%;
+    bottom: 5%;
+    right: 25%;
+    background-color: #b3b7b7;
+}
+
+.Growable textarea,
+.Growable pre {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: inherit;
+	font-size: inherit;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+	padding: 0.5em;
+        outline: none;
+}
+
+.Growable textarea {
+	width: 100%;
+	resize: none;
+	border: none;
+	
+	position: absolute;
+	top: 0; left: 0;
+	height: 100%;
+	overflow: visible;
+}*/
+@media only screen and (max-width:319px) { 
+
+}    
+
+@media only screen and (min-width: 639px) {
+body{
+    /* display: none; */
+}
+
+.pos {
+    position: fixed;
+    bottom: 0;
+    width: 83%;
+        background-color: white;
+    
+}
+.Growable {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border: 1px solid;
+    max-height: 300px;
+    overflow: hidden;
+    -webkit-scrollbar: red;
+    min-height: 106px;
+    border-radius: 0px;
+    left: 0;
+    background-color: white;
+}
+
+.Growable textarea,
+.Growable pre {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: inherit;
+    font-size: inherit;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    padding: 0.5em;
+    width: 84%;
+    -moz-user-focus: none;
+}
+
+.Growable textarea {
+    /* width: 100%; */
+    resize: none;
+    border: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    overflow: visible;
+    background-color: white;
+}
+
+
+.submitform {
+    width: 100%;
+        height: 17%;
+        bottom: 0;
+        position: absolute;
+        border: 1px solid #b3b7b7;
+    }
+    .submit {
+        position: relative;
+        margin-right: -47%;
+        margin-top: -53%;
+        height: 41px;
+        width: 47px;
+        outline: none;
+        border: 0;
+        background: url(../images/submit-button.png) no-repeat;
+        float: right;
+    }
+    .submit:hover {
+        cursor:pointer;
+    }
+    
+    .submit-frame {
+        position: relative;
+        margin-top: 3%;
+    }
+    
+    .submit-container {
+        float: right;
+        position: relative;
+        margin-bottom: -3px;
+        margin-right: 94px;
+        /* background-color: white; */
+    }
+
+/* Modal Content */
+.modal-content {
+    height: 32.4%;
+    margin-top: 9%;
+    position: relative;
+    width: 35%;
+    left: 3%;
+    
+}
+
+nav {
+    background-color: #61D290;
+    position: fixed;
+    left:0;
+    top:14.3%;
+    height: 85.7%;
+    width: 18%;
+}
+.logo {
+    height: 14.3%;
+}
+
+
+main {
+    height: 85%;
+    width: 82%;
+    top: 15%;
+    bottom: 0;
+}
+
+
+ol {
+            width: 96%;
+
+}
+
+.title {
+        left: 2%;
+    font-size: 28px;
+}
+.genderIcons {
+        top: 18%;
+        right: 0;
+    
+}
+.genderIcons dd {
+        font-size: 19px;
+}
+.genderIcons dd img {
+    height: 15px;
+}
+.messagesList li {
+    font-size: 15px;
+}
+.avatar {
+    height: 45px;
+    width: 45px;
+}
+/*.submit {
+    position: fixed;
+    right: 5.8%;
+    bottom: 5.8%;
+}
+
+.submit2, .submit2 img {
+        height: 3%;
+    width: 2%;
+    right: 5%;
+    position: fixed;
+}*/
+/*.Growable {
+    border-radius: 0;
+    height: 13.3%;
+    left: 18%;
+    width: 82%;
+}*/
+
+/*.input {    
+    width: 82%;
+    margin: 0;
+    font-size: 14px;
+
+}*/
+ol time {
+        font-size: 12px;
+}
+}
