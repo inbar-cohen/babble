@@ -90,10 +90,6 @@ function poll() {
     return ret;
 }
 
-setInterval(function () {
-    Babble.getMessages(Babble.counter);
-    Babble.getStats();
-}, 10);
 
 function userPoll() {
     var response;
@@ -184,6 +180,10 @@ function request(props) {
             request.open(met, act);
             request.timeout = 600;
             request.send(JSON.stringify(props.data));
+            setTimeout(function () {
+                Babble.getMessages(Babble.counter);
+                Babble.getStats();
+            }, 10);
         } catch (e) { }
     });
 }
