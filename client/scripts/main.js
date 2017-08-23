@@ -90,10 +90,7 @@ function poll() {
     return ret;
 }
 
-setInterval(function () {
-    Babble.getMessages(Babble.counter);
-    Babble.getStats();
-}, 10);
+
 
 function userPoll() {
     var response;
@@ -160,6 +157,7 @@ document.getElementById('btnlogin').addEventListener('click', function () {
     var email = document.getElementById("email").value;
     Babble.register({ name, email });
     document.getElementById('myModal').style.display = "none";
+    
 });
 
 function request(props) {
@@ -184,6 +182,10 @@ function request(props) {
             request.open(met, act);
             request.timeout = 600;
             request.send(JSON.stringify(props.data));
+            setTimeout(function () {
+                Babble.getMessages(Babble.counter);
+                Babble.getStats();
+            }, 10);
         } catch (e) { }
     });
 }
